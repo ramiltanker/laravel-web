@@ -1,0 +1,10 @@
+.paginator {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.paginator__list {
+    display: flex;
+    gap: 10px;
+}

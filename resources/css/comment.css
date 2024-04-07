@@ -1,0 +1,28 @@
+.comments-container {
+    padding: 10px;
+    border: 1px solid var(--cl-black);
+    border-radius: 10px;
+    width: 80%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.comment {
+    padding: 10px;
+    border: 1px solid var(--cl-black);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.comment__title {
+    font-size: var(--fz-common-text-big);
+    font-weight: bold;
+}
+
+.comment__underline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

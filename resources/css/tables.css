@@ -1,0 +1,16 @@
+.table {
+    border-radius: 10px;
+border-spacing: 0;
+}
+
+.table__header {
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid black;
+}
+.table__cell {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    vertical-align: middle;
+}

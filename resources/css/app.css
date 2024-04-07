@@ -1,0 +1,161 @@
+:root {
+    /* font-sizes (fz) */
+    font-size: 16px;
+    --fz-title-big: 2rem;
+    --fz-title-middle: 1.7rem;
+    --fz-title-small: 1.4rem;
+    --fz-common-text: 1.05rem;
+    --fz-common-text-big: 1.1rem;
+    --fz-common-text-small: 0.95rem;
+
+    /* colors (cl) */
+    --cl-white: white;
+    --cl-black: black;
+    --cl-bg-gray: rgb(109, 109, 109);
+    --cl-bg-black-gray: rgb(79, 79, 79);
+    --cl-bg-island: rgb(207, 207, 207);
+    --cl-yellow: rgb(255, 247, 0);
+    --cl-green:rgb(0, 153, 0);
+    --cl-blue:rgb(0, 127, 190);
+    --cl-red:rgb(221, 0, 0);
+}
+
+
+/* General styles */
+*, *::before, *::after {
+    box-sizing: border-box !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--cl-bg-gray);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Headers styles */
+h1 {
+    font-weight: bold;
+    font-size: var(--fz-title-big);
+    text-align: center;
+}
+h2 {
+    font-weight: bold;
+    font-size: var(--fz-title-middle);
+}
+h3 {
+    font-weight: bold;
+    font-size: var(--fz-title-small);
+}
+
+
+/* # Header-component styles */
+.header {
+    background-color: var(--cl-bg-black-gray);
+    display: flex;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 20px;
+    height: 50px;
+    padding: 0 150px;
+}
+.header__logo {
+    margin-right: auto;
+    font-weight: bold;
+    font-size: var(--fz-title-small);
+    text-decoration: none;
+    background-color: var(--cl-bg-gray);
+    padding: 5px 10px;
+}
+.header__nav {
+    display: flex;
+    gap: 15px;
+    margin-right: auto;
+}
+.header__link {
+    color: var(--cl-white);
+    font-size: var(--fz-common-text);
+    text-decoration: none;
+}
+.header__link.active {
+    color: var(--cl-yellow);
+}
+
+
+/* Buttons styles */
+.button {
+    font-size: var(--fz-common-text);
+    padding: 7px 10px 5px;
+    background-color: var(--cl-white);
+    border-radius: 5px;
+    color: var(--cl-black);
+    text-decoration: none;
+    text-align: center;
+    min-width: 110px;
+}
+.button_green {
+    background-color: var(--cl-green);
+    color: var(--cl-white)
+}
+.button_blue {
+    background-color: var(--cl-blue);
+    color: var(--cl-white)
+}
+.button_red {
+    background-color: var(--cl-red);
+    color: var(--cl-white)
+}
+
+.button-box {
+    display: flex;
+    gap: 10px;
+}
+.button-box_vertical {
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* Main styles */
+.main {
+    flex: 1 0;
+}
+
+.island {
+    background-color: var(--cl-bg-island);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.alert {
+    background-color: rgb(188, 220, 255);
+    border: 1px solid var(--cl-blue);
+    color: var(--cl-blue);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: var(--cl-bg-black-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+.footer__text {
+    font-size: var(--fz-title-small);
+    font-weight: bold;
+    color: var(--cl-white)
+}
